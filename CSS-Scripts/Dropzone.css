@@ -1,0 +1,95 @@
+/* Styles for the dropzone */
+
+.image-container {
+    position: relative; /* Allows the dropzone to be positioned relative to this container */
+    display: flex; /* Makes it behave like an inline block */
+
+}
+
+.image-container img {
+    width: 90%; /* Same as the image width */
+    max-height: 744px;
+    max-width: 1638px;
+    height: 90%;
+}
+
+.dropzone {
+    position: absolute;  /* Absolute positioning to place it on top of the image */
+    top: 0;              /* Align the dropzone with the top-left corner of the image */
+    left: 200px;
+    width: 1434px;         /* Makes the dropzone cover the full width of the image */
+    height: 122px;        /* Makes the dropzone cover the full height of the image */
+    color: white;        /* Text color */
+    display: block;       /* Flexbox to center text */
+    justify-content: left;
+    align-items: left;
+    overflow: hidden;
+    font-size: 20px;     /* Adjust text size */
+    pointer-events: auto; /* Make sure dropzone is interactive */
+}
+
+
+/* Dropzone 1 Already in Position */
+
+
+/* Dropzone 2 Position */
+#dropzoneA {
+    top: 125px;
+}
+
+/* Dropzone 3 Position */
+#dropzoneB {
+    top: 249px;
+
+}
+
+/* Dropzone 4 Position */
+#dropzoneC {
+    top: 372px;
+
+}
+
+/* Dropzone 5 Position */
+#dropzoneD {
+    top: 497px;
+
+}
+
+/* Dropzone 6 Position */
+#dropzoneE {
+    top: 619px;
+
+}
+
+.dropzone img {
+    max-width: 100%;      /* Prevents the image from overflowing horizontally */
+    max-height: 100%;     /* Prevents the image from overflowing vertically */
+    width: 198px;          /* Keeps the image's aspect ratio */
+    height: 120px;         /* Keeps the image's aspect ratio */
+    /* object-fit: contain; */
+    margin-left: 0;       /* Align the image with the left side of the dropzone */
+    flex-shrink: 0; /* Prevent images from shrinking or stretching */
+    flex-grow: 0;
+}
+
+
+.dropzone.hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+    border-color: #007BFF;
+}
+
+.original-parent {
+    width: 90%; /* Set the new width */
+    height: 120px; /* Set the new height */
+    margin-top: 20px;
+    padding: 20px;;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: visible;
+}
+
+.original-parent img {
+    display: flex row;
+    align-items: left;
+    cursor: move; /* Make it clear the images are draggable */
+}
